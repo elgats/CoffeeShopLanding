@@ -1,0 +1,295 @@
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+
+body {
+    width: 100%
+}
+   
+/* header */
+
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #logo {
+        height: 50px;
+        width: 75px;
+      }
+
+    #menu-responsive {
+        display: block;
+        float: right;
+        margin-top: 25px;
+    }
+
+    nav .close {
+        display: inline;
+        position: absolute;
+        left: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #FF0000;
+        opacity: 0.5;
+    }
+
+    nav .close {
+        opacity: 1;
+    }
+
+    #header-right {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #header-right:target {
+        background: rgba(0, 0, 0, 1);
+        visibility: visible;
+        position: relative;
+        opacity: 1;
+        top: 50px;
+        right: -50px;
+        width: 60%;
+        margin-top: 0;
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        right: 0;
+    }
+
+/* Hero Section */
+
+    .hero {
+        margin-top: 10%;
+    }
+
+    .hero img {
+        height: 600px;
+    }
+
+    .cta p {
+        width: 90%;
+    }
+
+/* Our Story Section */
+
+    video {
+        width: 350px;
+        height: 250px;
+    }
+
+
+/* Featured Coffee Section */
+
+.coffee-parallax1, .coffee-parallax2, .coffee-parallax3, .featured-parallax {
+    min-height: 200px;
+}
+
+.coffee img {
+    max-width: 100%;
+    height: 250px;
+  }
+
+/* Registration Form Section */
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form section {
+        margin: 10px 0;
+    }
+
+/* Locations Section */
+
+    .container-locations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background-image {
+        width: 100%;
+    }
+
+    .popup {
+        width: 100%;
+    }
+
+    .popup .close {
+        font-size: 35px;
+        top: 10px;
+        right: 20px;
+    }
+
+/* Footer */
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    
+}
+
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+
+/* header */
+
+header {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#logo {
+    height: 50px;
+    width: 75px;
+  }
+
+#menu-responsive {
+    visibility: visible;
+    float: right;
+    margin-top: 25px;
+}
+
+#header-right {
+    visibility: hidden;
+}
+
+/* Featured Coffee Section */
+
+.coffee-parallax1, .coffee-parallax2, .coffee-parallax3, .featured-parallax {
+    min-height: 250px;
+}
+/* main  */
+
+main {
+    width: 125%;
+}
+
+.cta {
+    width: 125%
+}
+
+.hero img {
+    height: 600px;
+}
+
+.cta p {
+    width: 90%;
+}
+
+/* Registration Form Section */
+
+form {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form label {
+    padding: 0 5px;
+}
+
+form input {
+    padding: 5px 0;
+}
+
+#submit {
+    margin-top: 15px;
+}
+
+/* Location section */
+
+.background-image {
+    width: 100%;
+}
+
+.popup {
+    width: 100%;
+}
+
+.popup .close {
+    font-size: 35px;
+    top: 10px;
+    right: 20px;
+}
+
+/* Footer section */
+
+footer {
+    width: 125%;
+    padding: 20px;
+}
+
+.footer-content {
+    flex-direction: column;
+}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+/* header */
+
+    nav a {
+        font-size: 0.70em;
+    }
+
+/* Featured Coffee Section */
+
+    .coffee-parallax1, .coffee-parallax2, .coffee-parallax3, .featured-parallax {
+    min-height: 250px;
+    }
+
+    .coffee img {
+        max-width: 100%;
+        height: 250px;
+    }
+
+/* Location section */
+
+    .background-image {
+        width: 80%;
+    }
+
+    .popup {
+        width: 80%;
+    }
+
+    .popup .close {
+        font-size: 35px;
+        top: 10px;
+        right: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+
+/* header */
+
+    nav a {
+        font-size: 0.70em;
+    }
+
+/* Hero section */
+
+    .hero img {
+        height: 600px;
+    }
+}

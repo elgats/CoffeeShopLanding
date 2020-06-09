@@ -10,19 +10,26 @@
   <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
   <link rel="stylesheet" href="resources/css/responsive.css" type="text/css">
   <link rel="stylesheet" href="https://use.typekit.net/hdu3cfq.css">
+  <script src="https://kit.fontawesome.com/c12de2f770.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <!-- Header -->
 
-  <header id="header" class="flex-container">
-    <img src="resources/assets/images/logo.svg"/>
+  <header id="header">
     <nav id="nav-bar">
-      <span><a href="our-story" class="nav-link">Our Story</a></span>
-      <span><a href="#store" class="nav-link">Featured Coffee</a></span>
-      <span><a href="our-catalog" class="nav-link">Our Catalog</a></span>
-      <span><a href="#locations" class="nav-link">Locations</a></span>
+      <img id="logo" src="resources/assets/images/logo.svg"/>
+      <a href="#header-right"><img src="resources/assets/images/menu.svg" id="menu-responsive"></a>
+      <div id="header-right">
+        <a class="close" href="#menu-responsive">&times;</a>
+        <div class="nav-menu">
+          <span><a href="#our-story" class="nav-link">OUR STORY</a></span>
+          <span><a href="#featured-coffee" class="nav-link">FEATURED COFFEE</a></span>
+          <span><a href="#registration-form" class="nav-link">PROMOTIONS</a></span>
+          <span><a href="#locations" class="nav-link">LOCATIONS</a></span>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -32,18 +39,18 @@
 
     <!-- Hero Section -->
     
-    <div class="hero">
-        <img src="resources/assets/images/hero.gif" alt="Latte">
-        <div class="cta">
-        <h2>Fuel and Spice Up Your Life</h2>
-        <p>Enjoy your choice of high-quality Indonesian coffee! Indonesia produces many varieties of coffee, each of them has unique flavors and aroma. You can choose fruity, chocolatey, earthy coffee and many more to make your day brighter. <b>Start exploring these exciting flavors with us at half price (50% off).</b></p>
-        <h3>Register now to get the discount voucher!</h3>
-        <a class="cta-button">Start My Coffee Journey</a>
-      </div>
-    </div>
+  <section class="hero">
+    <img src="resources/assets/images/hero.gif" alt="Latte">
+    <div class="cta">
+      <h2>Fuel and Spice Up Your Life</h2>
+      <p>Enjoy your choice of high-quality Indonesian coffee! Indonesia produces many varieties of coffee, each of them has unique flavors and aroma. You can choose fruity, chocolatey, earthy coffee and many more to make your day brighter. <b>Start exploring these exciting flavors with us at half price (50% off).</b></p>
+      <h3>Register now to get the discount voucher!</h3>
+      <a class="cta-button" href="#form">Start My Coffee Journey</a>
+     </div>
+  </section>
     
     <!-- Our Story Section -->
-    <div id="our-story">
+    <section id="our-story">
       <div class="description">
         <h2>Our Story</h2>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
@@ -52,13 +59,17 @@
           <source src="resources/assets/video/Web Hero.mp4">
           Your browser does not support the video tag.
         </video>
-    </div>
+    </section>
 
     <!-- Featured Coffee Section -->
 
-    <div id="featured-coffee">
-      <h2>Featured Coffee</h2>
-      <h4>What's brewing at Nusantara Coffee?</h4>
+    <section id="featured-coffee">
+      <div class="featured-parallax"></div>
+
+      <div class="featured-title">
+        <h2>Featured Coffee</h2>
+        <h4>What's brewing at Nusantara Coffee?</h4>
+      </div>
 
       <div class="coffee-parallax1"></div>
       <div id="first" class="coffee">
@@ -73,7 +84,7 @@
       <div id="second" class="coffee">
         <img src="resources/assets/images/toraja.png" alt="Toraja Coffee">
         <div class="coffee-description">
-          <h3>Malabar Natural</h3>
+          <h3>Aceh Gayo</h3>
           <p>Orginated from Mount Malabar in West Java, it has a fruity, sweet aroma with caramel and fruity flavors.</p>
       </div>
     </div>
@@ -85,68 +96,230 @@
         <h3>Toraja</h3>
         <p>Orginated from Mount Malabar in West Java, it has a fruity, sweet aroma with caramel and fruity flavors.</p>
     </div>
-  </div>
+  </section>
 
-    </main> 
-        <!--<div class="item">
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-berryblitz.jpg" />
-          <span>Fall Berry Blitz Tea</span>
-        </div>
-        <div class="item">
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-spiced-rum.jpg" />
-          <span>Spiced Rum Tea</span>
-        </div>
-        <div class="item">
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-donut.jpg" />
-          <span>Seasonal Donuts</span>
-        </div>
-        <div class="item">
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-myrtle-ave.jpg" />
-          <span>Myrtle Ave Tea</span>
-        </div>
-        <div class="item">
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-bedford-bizarre.jpg" />
-          <span>Bedford Bizarre Tea</span>
-        </div>
-      </div>
-    </div> -->
+ <!-- Registration Form Section -->
+
+  <section class="registration-form">
+    <h2>Register and Get 50% Off!</h2>
+    <img src="resources/assets/images/discount.png">
+    <p>Get a cup of Malabar Natural or Aceh Gayo or Tojara coffee with 50% discount by registering as our member! We will send the discount voucher to your email. Then, you can redeem the voucher by showing it to our barista.</p>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+      <section id="username">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
+      </section>
+
+      <section id="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </section>
+
+      <section id="#submitbutton">
+        <input id="submit" type="submit" value="Get Voucher">
+      </section>
+    </form>
+  </section>
+
+    
 
     <!-- Locations Section -->
 
-    <!-- <div id="locations">
+    <section id="locations">
       <h2>Locations</h2>
-      <div class="flex-container locations">
-        <div class="location">
-          <h3>Downtown</h3>
-          <p>384 West 4th St</p>
-          <p>Suite 108</p>
-          <p>Portland, Maine</p>
-        </div>
-        <div class="location">
-          <h3>East Bayside</h3>
-          <p>3433 Phisherman's Avenue</p>
-          <p>(Northwest Corner)</p>
-          <p>Portland, Maine</p>
-        </div>
-        <div class="location">
-          <h3>Oakdale</h3>
-          <p>515 Crescent Avenue</p>
-          <p>Second Floor</p>
-          <p>Portland, Maine</p>
-        </div>
-      </div>
-    </div>-->
+      <div class="container-locations">
 
-    <!-- Contact Section -->
-    <!-- <div id="contact">
-      <h2>The Tea Cozy</h2>
-      <h5>contact@theteacozy.com</h5>
-      <h5>917-555-8904</h5>
-    </div> -->
+        <div id="fist-loc" class="location">
+          <div class="loc-name">
+            <a href="#popup1">Downtown</a>
+        </div>
+          <a href="#popup1"><img src="resources/assets/images/wade-austin-ellis-4YApsoSaNKA-unsplash.jpg" alt="Downtown store"></a>
+        </div>
+
+        <div id="second-loc" class="location">
+          <div class="loc-name">
+            <a href="#popup2">East Bayside</a>
+          </div>
+          <a href="#popup2"><img src="resources/assets/images/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg" alt="East Bayside store"></a>
+        </div>
+
+        <div id="third-loc" class="location">
+          <div class="loc-name">
+            <a href="#popup3">Oakdale</a>
+          </div>
+          <a href="#popup3"><img src="resources/assets/images/van-thanh-ZySumdV9rpw-unsplash.jpg" alt="Oakdale store"></a>
+        </div>
+
+        <div id="popup1" class="overlay">
+          <img src="resources/assets/images/wade-austin-ellis-4YApsoSaNKA-unsplash.jpg" class="background-image">
+          <div class="popup">
+              <h3>Downtown</h3>
+              <a class="close" href="#locations">&times;</a>
+              <div class="loc-details"> 
+                <section class="loc-address">
+                  <h4>Address:</h4>
+                  <p>384 West 4th St</p>
+                  <p>Suite 108</p>
+                  <p>Portland, Maine</p>
+                </section> 
+                <section class="loc-contact">
+                  <h4>Contact:</h4>
+                  <p>917-555-8911</p>
+                </section>
+                <section class="loc-hours">
+                  <h4>Operational hours:</h4>
+                  <p>Monday-Friday:</p>
+                  <p>7AM - 9PM</p>
+                  <p>Saturday-Sunday:</p> <p>8AM - 11PM</p>
+                </section>
+                <section class="loc-facilities">
+                  <h4>Facilities:</h4>
+                  <div class="facility-icons">
+                    <div class="meeting-room">
+                      <img src="resources/assets/images/meeting-room.svg" alt="Meeting Room">
+                      <p>Meeting room</p>
+                    </div>
+                    <div class="smoking-room">
+                      <img src="resources/assets/images/smoking-area.svg" alt="Smoking area">
+                      <p>Smoking room</p>
+                    </div>
+                    <div class="drive-thru">
+                      <img src="resources/assets/images/drive-thru.svg" alt="Drive thru">
+                      <p>Drive thru</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            
+          </div>
+        </div>
+
+        <div id="popup2" class="overlay">
+          <img src="resources/assets/images/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg" class="background-image">
+          <div class="popup">
+            <h3>East Bayside</h3>
+            <a class="close" href="#locations">&times;</a>
+            <div class="loc-details"> 
+              <section class="loc-address">
+                <h4>Address:</h4>
+                <p>3433 Phisherman's Avenue</p>
+                <p>(Northwest Corner)</p>
+                <p>Portland, Maine</p>
+              </section>
+              <section class="loc-contact">
+                <h4>Contact:</h4>
+                <p>917-555-8981</p>
+              </section>
+              <section class="loc-hours">
+                <h4>Operational hours:</h4>
+                <p>Monday-Friday:</p>
+                <p>7AM - 9PM</p>
+                <p>Saturday-Sunday:</p> <p>8AM - 11PM</p>
+              </section>
+              <section class="loc-facilities">
+                <h4>Facilities:</h4>
+                <div class="facility-icons">
+                  <div class="meeting-room">
+                    <img src="resources/assets/images/meeting-room.svg" alt="Meeting Room">
+                    <p>Meeting room</p>
+                  </div>
+                  <div class="smoking-room">
+                    <img src="resources/assets/images/smoking-area.svg" alt="Smoking area">
+                    <p>Smoking room</p>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="popup3" class="overlay">
+          <img src="resources/assets/images/van-thanh-ZySumdV9rpw-unsplash.jpg" class="background-image">
+          <div class="popup">
+            <h3>Oakdale</h3>
+            <a class="close" href="#locations">&times;</a>
+            <div class="loc-details"> 
+              <section class="loc-address">
+                <h4>Address:</h4>
+                <p>515 Crescent Avenue</p>
+                <p>Second Floor</p>
+                <p>Portland, Maine</p>
+              </section>
+              <section class="loc-contact">
+                <h4>Contact:</h4>
+                <p>917-534-8911</p>
+              </section>
+              <section class="loc-hours">
+                <h4>Operational hours:</h4>
+                <p>Monday-Friday:</p>
+                <p>8AM - 9PM</p>
+                <p>Saturday-Sunday:</p> <p>8AM - 11PM</p>
+            </section>
+            <section class="loc-facilities">
+              <h4>Facilities:</h4>
+              <div class="facility-icons">
+                <div class="smoking-room">
+                  <img src="resources/assets/images/smoking-area.svg" alt="Smoking area">
+                  <p>Smoking room</p>
+                </div>
+                <div class="drive-thru">
+                  <img src="resources/assets/images/drive-thru.svg" alt="Drive thru">
+                  <p>Drive thru</p>
+                </div>
+              </div>
+            </section>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+  
+  </main> 
 
     <!-- Footer Section -->
     <footer>
+
+    <div class="footer-content">
+      <!-- Contact Section -->
+      <section id="contact">
+        <h4>NUSANTARA COFFEE</h4>
+        <h4>Contact</h4>
+        <p>contact@nusantaracoffee.com</p>
+        <p>384 West 4th St</p>
+        <p>Suite 108</p>
+        <p>Portland, Maine</p>
+        <p>917-555-8904</p>
+      </section> 
+
+      <!-- Link Section -->
+      <section id="links">
+        <h4>LINKS</h4>
+
+        <nav id="nav-bar-footer">
+          <span><a href="#our-story" class="nav-link">Our Story</a></span>
+          <span><a href="#featured-coffee" class="nav-link">Featured Coffee</a></span>
+          <span><a href="#registration-form" class="nav-link">Promotions</a></span>
+          <span><a href="#locations" class="nav-link">Locations</a></span>
+        </nav>
+
+      </section>
+
+       <!-- Social Media Section -->
+      <section id="social-media"> 
+        <h4>FOLLOW US</h4>
+        <div class="icons">
+          <a href="#" class="btn behance"><span class="fab fa-twitter"></span></a>
+          <a href="#" class="btn instagram"><span class="fab fa-instagram"></span></a>
+          <a href="#" class="btn facebook"><span class="fab fa-facebook"></span></a>
+      </div>
+      </section>
+    </div>
+
       <h5>Copyright Nusantara Coffee 2020</h5>
+    
     </footer>
   </body>
 </html>

@@ -9,7 +9,6 @@ html {
 
 body {
     margin: 0;
-    /* font-family: "Helvetica", sans-serif;*/
     background-color: #EAE7E7; 
     font-size: 1.25em; 
     font-family: kinesis-pro-3, serif;
@@ -22,17 +21,22 @@ h1, h2, h3, h4 {
   font-family: sofia-pro, sans-serif;
   text-align: center;
 }
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+a {
+  text-decoration: none;
+}
   
 nav a {
     color: #FFF3EB;
-    text-decoration: none;
     font-family: sofia-pro, sans-serif;
-  }
-  
-.flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   
   /* Header Section */
@@ -41,41 +45,62 @@ header {
     width: 100%;
     position: fixed;
     z-index: 2;
-    height: 69px;
+    height: 80px;
     background-color: black;
     align-items: center;
     top: 0;
     left: 0;
-  }
-  
-header img {
-    height: 50px;
-    width: 100px;
     padding-left: 20px;
+    padding-right: 20px;
   }
   
-nav {
+#logo {
+  float: left;
+  height: 50px;
+  width: 100px;
+  margin-top: 15px;
+}
+
+nav .close {
+  display: none;
+}
+
+#header-right {
+  float: right;
+  display: inline-block;
+  margin-top: 10px;
+}
+  
+header nav {
     text-align: right;
     flex-grow: 1;
   }
   
-nav span {
+header nav span {
     display: inline-block;
     padding: 20px 10px;
   }
-  
-  /* Main Section */
-  
-main {
-    /* padding-top: 69px;
-    opacity: 0.9;
-    width: 1200px;
-    margin: auto; */
+
+#menu-responsive {
+  display: none;
+  height: 25px;
+  width: 25px;
 }
 
-    /* Hero Section */
+.header-right {
+  display: inline-block;
+}
+
+/* Main Section */
+
+main {
+  width: 100%;
+}
+
+/* Hero Section */
   
 .hero {
+    width: 100%;
     display: flex;
     align-items: center;
     margin-top: 4%;
@@ -99,7 +124,6 @@ main {
     padding-left: 2.5%;
     padding-right: 2.5%;
     padding-bottom: 2.5%;
-    /* background-color: rgba(255, 255, 255, 0.5); */
     height: auto;
     width: 100%;
     border-radius: 20px;
@@ -116,7 +140,7 @@ main {
     background-color: #33241D;
     color: #FFF3EB;
     padding: 10px;
-    width: 30%;
+    width: 250px;
     border-radius: 10px;
     text-align: center;
     font-family: sofia-pro, sans-serif;
@@ -129,7 +153,7 @@ main {
   /* Our Story Section */
 
 #our-story {
-  padding: 5%;
+  padding: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,24 +161,33 @@ main {
 }
 
 #our-story h2 {
+  margin-top: 0;
   text-align: center;
 }
 
 /* Featured Coffee Section */
 
+#featured-coffee {
+  max-width: 100%;
+}
 
-.coffee-parallax1, .coffee-parallax2, .coffee-parallax3 {
+.coffee-parallax1, .coffee-parallax2, .coffee-parallax3, .featured-parallax {
   position: relative;
   opacity: 0.65;
-  min-height: 500px;
-  background-attachment: fixed;
+  min-height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.coffee-parallax1 {
+.featured-parallax {
+  min-height: 450px;
   background-image: url('../assets/images/red-and-yellow-coffee-berries-on-branch-1556665.jpg');
+}
+
+
+.coffee-parallax1 {
+  background-image: url('../assets/images/Indonesia-banner.jpg');
 }
 
 .coffee-parallax2 {
@@ -167,9 +200,11 @@ main {
 
 .coffee {
   width: 100%;
-  height: 500px;
+  height: auto;
+  padding: 5%;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -180,104 +215,259 @@ main {
 .coffee img {
   max-width: 50%;
   height: 350px;
-  /* max-height: 50%; */
 }
 
-.coffee-description h3 {
-  text-align: left;
+.coffee-description h3, .coffee-description p {
+  text-align: center;
 }
 
-.coffee-description p {
-  text-align: left;
-}
-
-#first, #third {
-  background-color: #D7B7A3;
+#first {
+  background-color: #E8D6BF;
 }
 
 #second {
-  background-color: #EAE7E7; 
+  background-color: #DDCFB8; 
+}
+
+#third {
+  background-color: #CCC0AD;
+}
+
+/* Registration Form Section */
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form section {
+  margin: auto 5px;
+}
+
+.registration-form {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.registration-form p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+input {
+  padding: 5px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+#submit {
+  background-color: #33241D;
+  color: #FFF3EB;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#submit:hover {
+  background-color: #6D4B30
+}
+
+/* Location Form Section */
+
+.container-locations {
+  display: flex;
+  width: 100%;
+}
+
+.location {
+  transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+}
+
+.location img {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  max-width: 100%;;
+  max-height: 100%;
+  opacity: 0.65;
+  flex-shrink: 1;
+}
+
+.location img:hover {
+  opacity: 1;
+}
+
+#second-loc img {
+  flex-shrink: 2;
+}
+
+.loc-name {
+  position: absolute;
+  z-index: 1;
+  font-weight: bold;
+  align-self: center;
+  font-size: 1.5em;
+}
+
+.loc-name a {
+  color: #ffffff;
 }
 
 
-/* #third {
-  background-color: #c6978e;
-} */
-  /* #mission {
-    height: 700px;
-    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
-    padding-top: 70px;
-  }
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.background-image {
+  filter: blur(8px);
+  margin: 0 auto;
+  z-index: 9;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  max-height: 100%;
+  transition: all 5s ease-in-out;
+}
+
+.popup {
+  z-index: 10;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  position: absolute;
+  transition: all 5s ease-in-out;
+}
+
+
+.popup h4 {
+  text-align: center;
+}
+
+
+.popup h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.loc-details {
+  padding: 2.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.loc-details p {
+  line-height: 10px;
+}
+
+.loc-details section {
+  width: 50%;
+}
+
+.facility-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.facility-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 25px;
+}
+
+.facility-icons p {
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FF0000;
+  opacity: 0.5;
+}
+
+.popup .close:hover {
+  opacity: 1;
+}
   
-  #mission .content {
-    margin: auto;
-    background-color: black;
-    width: 100%;
-  } */
+/* Footer Section */
   
-  /* Store Section */
-  
-  /* #store {
-    height: 700px;
-    width: 1000px;
-    margin: auto;
-    padding-top: 70px;
-  }
-  
-  .item {
-    padding: 5px;
-  }
-  
-  .item img {
-    height: 200px;
-    margin: 10px;
-    display: block;
-  }
-  
-  .item span {
-    display: block;
-    padding: 5px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  /* Location Section */
-  
-  /* .flex-container.locations {
-    padding-top: 5px;
-  }
-  
-  #locations {
-    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
-    height: 500px;
-    padding-top: 70px;
-  }
-  
-  #locations .flex-container {
-    margin: auto;
-    width: 1100px;
-  }
-  
-  .location {
-    opacity: 1.0;
-    padding: 10px;
-    margin: 5px 20px;
-    background-color: black;
-    flex-basis: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  /* Contact Section */
-  
-  /* #contact {
-    height: 200px;
-  } */ 
-  
-  /* Footer Section */
-  
-  /* footer {
-    text-align: left;
-    padding-left: 20px;
-  }*/
+footer {
+  text-align: left;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+  padding: 20px 40px;
+ }
+
+ footer h4  {
+  text-align: left;
+ }
+
+ footer h5  {
+  font-size: 1em;
+  font-weight: bold;
+ }
+
+ .footer-content {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ #nav-bar-footer {
+   display: flex;
+   flex-direction: column;
+ }
+
+ #contact {
+  line-height: 5px;
+ }
+ 
+ .icons {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 35px);
+  grid-column-gap: 10px;
+ } 
+
+ .btn {
+  font-size: 25px;
+  color: #ffffff;
+ }

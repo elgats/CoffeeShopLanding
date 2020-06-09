@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.769" height="50.952" viewBox="0 0 67.769 50.952">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="2.221" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff900f"/>
+      <stop offset="1" stop-color="#804808"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x2="1" y2="3.439" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="smoking-area" transform="translate(0.607 -65.529)">
+    <path id="Path_86" data-name="Path 86" d="M438.554,109.706c0-5.918-2.218-8.441-5.135-11.412.09,5.639-7.478,10.091-7.478,15.076,0,6.353,4.056,8.157,7.478,10.15C433.626,117.94,438.554,115.624,438.554,109.706Z" transform="translate(-371.392 -28.561)" fill="url(#linear-gradient)"/>
+    <path id="Path_87" data-name="Path 87" d="M365.4,82.343c.138-3.719,3.422-5.263,3.422-9.208s-1.478-5.627-3.422-7.606c.06,3.758-4.983,6.726-4.983,10.049,0,4.235,2.7,5.437,4.983,6.765Z" transform="translate(-314.271 0)" fill="url(#linear-gradient-2)"/>
+    <path id="Path_88" data-name="Path 88" d="M0,327.647H54.656v16.817H0Z" transform="translate(-0.107 -228.483)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    <path id="Path_89" data-name="Path 89" d="M458.706,327.647h8.409v16.817h-8.409Z" transform="translate(-399.952 -228.483)" fill="#707070"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="12" height="17" transform="translate(-0.11 99.192)" fill="#838383"/>
+  </g>
+</svg>
