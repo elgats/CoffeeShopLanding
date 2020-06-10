@@ -153,7 +153,7 @@ main {
   /* Our Story Section */
 
 #our-story {
-  padding: 10%;
+  padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,23 +165,42 @@ main {
   text-align: center;
 }
 
+#our-story video {
+  margin-top: 2.5%;
+}
+
 /* Featured Coffee Section */
 
 #featured-coffee {
   max-width: 100%;
 }
 
+.featured-title {
+  background-color: #E8D6BF;
+  margin: 0;
+}
+
+.featured-title h2 {
+  margin: 0;
+  padding: 30px;
+}
+
+.featured-title h4 {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
 .coffee-parallax1, .coffee-parallax2, .coffee-parallax3, .featured-parallax {
   position: relative;
-  opacity: 0.65;
-  min-height: 450px;
+  opacity: 0.35;
+  min-height: 350px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .featured-parallax {
-  min-height: 450px;
   background-image: url('../assets/images/red-and-yellow-coffee-berries-on-branch-1556665.jpg');
 }
 
@@ -202,14 +221,18 @@ main {
   width: 100%;
   height: auto;
   padding: 5%;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .coffee-description {
   width: 100%;
+}
+
+.coffee-description p {
+  text-align: left;
 }
 
 .coffee img {
@@ -217,8 +240,13 @@ main {
   height: 350px;
 }
 
-.coffee-description h3, .coffee-description p {
-  text-align: center;
+
+.coffee-description ul {
+  padding: 0;
+}
+
+.coffee-description li {
+  list-style: none;
 }
 
 #first {
@@ -231,6 +259,10 @@ main {
 
 #third {
   background-color: #CCC0AD;
+}
+
+li {
+  list-style: none;
 }
 
 /* Registration Form Section */
